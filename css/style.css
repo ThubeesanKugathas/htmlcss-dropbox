@@ -125,10 +125,150 @@ main {
 .box-1 {
     height: 600px;
     margin-top: 30px;
-    background-color: violet;
     width: calc(33% - 15px);
 }
 
 .box-1-center {
     margin-left: 30px;
+}
+
+.type {
+    height: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+}
+
+.type::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 5px;
+    content: "\f007";
+}
+
+.description {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.box-1 .description {
+    height: 800px;
+}
+
+.box-1 .price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.box-1 .price::after{
+    content: "\20AC";
+    padding-left: 5px;
+}
+
+.box-1 .duration {
+    margin-top: 10px;
+    color: #1d5a83;
+}
+
+.box-1 .list {
+    margin: 30px 0;
+}
+
+.list .user-nr {
+    margin-bottom: 10px;
+}
+
+.list .user-nr::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 5px;
+    content: "\f007";
+}
+
+.list .space::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 5px;
+    content: "\f07b";
+}
+
+.list .function::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 5px;
+    content: "\f304";
+}
+
+.list .space {
+    margin-bottom: 10px;
+}
+
+.list .function {
+    margin-bottom: 10px;
+}
+
+.box-1 .option {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.box-1 .advantages ul {
+    list-style: none;
+}
+
+.box-1 .advantages li {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.box-1 .check li::before {
+    content: "\f00c";
+    color: #0063ff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 5px;
+
+}
+
+.box-2 {
+    margin-top: 300px;
+}
+
+.box-2 .info {
+    font-weight: bold;
+    margin-top:20px;
+}
+
+.box-2 .info-2 {
+    margin-top: 30px;
+}
+
+.box-3 {
+    margin-top: 150px;
+}
+
+.box-3-img {
+    width: 50%;
+}
+
+.box-3-text {
+    width: 50%;
+    padding: 30px;
+}
+
+.box-3-text h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.box-3-text p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.box-3-img img {
+    width: 450px;
 }
