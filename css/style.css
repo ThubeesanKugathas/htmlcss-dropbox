@@ -27,6 +27,20 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    color: white;
+    background-color: #0063ff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
 /* ----------------------------------------------------------------------------------------- */
 
 /* HEADER  */
@@ -54,7 +68,7 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    color: black;
 }
 
 /* MAIN  JUMBOTRON*/
@@ -101,17 +115,23 @@ main {
     margin-top: 20px;
 }
 
+.jumbotron .text .button-2 {
+    background-color: none;
+    color: black;
+}
+
 .jumbotron .text .fas {
     font-size: 35px;
     margin-top: 30px;
 }
 
+
+/* MAIN PARTE UNO  */
+
 .container-small {
     width: 900px;
     margin-top: 100px;
 }
-
-/* MAIN PARTE UNO  */
 
 .radio-button {
     margin-top: 50px;
@@ -141,9 +161,16 @@ main {
 
 .type::before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    font-weight: 400;
     padding-right: 5px;
+}
+
+.box-1a .type::before {
     content: "\f007";
+}
+
+.box-1-center .type::before, .box-1c .type::before {
+    content: "\f1ad";
 }
 
 .description {
@@ -177,42 +204,63 @@ main {
     margin: 30px 0;
 }
 
-.list .user-nr {
+.list .icon {
     margin-bottom: 10px;
 }
 
-.list .user-nr::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding-right: 5px;
+
+.box-1a .user-nr::before {
     content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 5px;
 }
 
-.list .space::before {
-    font-family: "Font Awesome 5 Free";
+.box-1-center .user-nr::before, .box-1c .user-nr::before{
+    content: "\f234";
     font-weight: 900;
+    font-family: "Font Awesome 5 Free";
     padding-right: 5px;
+}
+
+.box-1a .space::before, .box-1-center .space::before {
     content: "\f07b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 5px;
 }
 
-.list .function::before {
+.box-1c .space::before {
+    content: "\f118";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 5px;
+}
+
+
+
+.box-1a .function::before, .box-1c .function::before {
+    content: "\f304";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     padding-right: 5px;
-    content: "\f304";
 }
 
-.list .space {
-    margin-bottom: 10px;
-}
-
-.list .function {
-    margin-bottom: 10px;
+.box-1-center .function::before {
+    content: "\f118";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 5px;
 }
 
 .box-1 .option {
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+.box-1 .option .button-2 {
+    font-weight: bold;
+    color: #0063ff;
 }
 
 .box-1 .advantages ul {
@@ -271,4 +319,10 @@ main {
 
 .box-3-img img {
     width: 450px;
+}
+
+.box-3 .button-b {
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
 }
