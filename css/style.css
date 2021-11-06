@@ -18,7 +18,6 @@ body {
     float: left;
 }
 
-
 .fr {
     float: right;
 }
@@ -41,6 +40,11 @@ a:hover {
     text-decoration: none;
     padding: 5px 10px;
 }
+
+.icon::before {
+    font-family: "Font Awesome 5 Free";
+    padding-right: 5px;
+}
 /* ----------------------------------------------------------------------------------------- */
 
 /* HEADER  */
@@ -51,6 +55,7 @@ header {
 
 .fl img {
     padding:0 10px;
+    vertical-align: middle;
 }
 
 nav {
@@ -71,9 +76,9 @@ nav ul li a {
     color: black;
 }
 
-/* MAIN  JUMBOTRON*/
+/* MAIN  JUMBOTRON---------------------------*/
 
-main {
+.container-big {
     background-color: #add1ea;
     height: 600px;
 }
@@ -98,7 +103,7 @@ main {
 
 .jumbotron .text {
     width: 30%;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .jumbotron .img {
@@ -126,7 +131,7 @@ main {
 }
 
 
-/* MAIN PARTE UNO  */
+/* MAIN CONTAINER 2------------------------------*/
 
 .container-small {
     width: 900px;
@@ -141,6 +146,8 @@ main {
     display: inline-block;
     padding-right: 20px;
 }
+
+/* MAIN BOX-1-----------------------*/
 
 .box-1 {
     height: 600px;
@@ -160,16 +167,14 @@ main {
 }
 
 .type::before {
-    font-family: "Font Awesome 5 Free";
     font-weight: 400;
-    padding-right: 5px;
 }
 
-.box-1a .type::before {
+.box-1 .type-1::before {
     content: "\f007";
 }
 
-.box-1-center .type::before, .box-1c .type::before {
+.type-2::before {
     content: "\f1ad";
 }
 
@@ -183,6 +188,10 @@ main {
 
 .box-1 .description {
     height: 800px;
+}
+
+.box-1 .offer {
+    margin-bottom: 50px;
 }
 
 .box-1 .price {
@@ -208,57 +217,45 @@ main {
     margin-bottom: 10px;
 }
 
-
-.box-1a .user-nr::before {
+.box-1 .user-nr-1::before {
     content: "\f007";
-    font-family: "Font Awesome 5 Free";
     font-weight: 400;
-    padding-right: 5px;
 }
 
-.box-1-center .user-nr::before, .box-1c .user-nr::before{
+.box-1 .user-nr-2::before{
     content: "\f234";
     font-weight: 900;
-    font-family: "Font Awesome 5 Free";
-    padding-right: 5px;
 }
 
-.box-1a .space::before, .box-1-center .space::before {
+.box-1 .space::before {
+    font-weight: 400;
+}
+
+.box-1 .space-1::before {
     content: "\f07b";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    padding-right: 5px;
 }
 
-.box-1c .space::before {
+.box-1 .space-2::before {
     content: "\f118";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    padding-right: 5px;
 }
 
 
-
-.box-1a .function::before, .box-1c .function::before {
+.box-1 .function-1::before {
     content: "\f304";
-    font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    padding-right: 5px;
 }
 
-.box-1-center .function::before {
+
+.box-1 .function-2::before {
     content: "\f118";
-    font-family: "Font Awesome 5 Free";
     font-weight: 400;
-    padding-right: 5px;
 }
 
 .box-1 .option {
     margin-top: 30px;
-    margin-bottom: 50px;
 }
 
-.box-1 .option .button-2 {
+.box-1 .option a {
     font-weight: bold;
     color: #0063ff;
 }
@@ -275,24 +272,26 @@ main {
 .box-1 .check li::before {
     content: "\f00c";
     color: #0063ff;
-    font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    font-family: "Font Awesome 5 Free";
     padding-right: 5px;
-
 }
+
+/* MAIN BOX-2------------------------------*/
 
 .box-2 {
     margin-top: 300px;
 }
 
 .box-2 .info {
-    font-weight: bold;
     margin-top:20px;
 }
 
-.box-2 .info-2 {
-    margin-top: 30px;
+.box-2 .info-bold {
+    font-weight: bold;
 }
+
+/* MAIN BOX-3-----------------------------*/
 
 .box-3 {
     margin-top: 150px;
@@ -321,7 +320,7 @@ main {
     width: 450px;
 }
 
-.box-3 .button-b {
+.box-3 .button-3 {
     color: black;
     padding: 5px 10px;
     border: 1px solid black;
