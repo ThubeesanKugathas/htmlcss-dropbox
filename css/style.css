@@ -6,6 +6,13 @@
 
 body {
     font-family: 'Open Sans';
+    position: relative;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .row::after{
@@ -43,7 +50,7 @@ a:hover {
 
 .icon::before {
     font-family: "Font Awesome 5 Free";
-    padding-right: 5px;
+    /* padding-right: 5px; */
 }
 
 ul {
@@ -55,7 +62,7 @@ ul {
 /* HEADER  */
 header {
     background-color: white;     
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1001;
 }
@@ -63,7 +70,7 @@ header {
 
 .fl img {
     padding:0 10px;
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }
 
 nav {
@@ -82,7 +89,7 @@ nav ul li a {
 
 /* MAIN  JUMBOTRON---------------------------*/
 
-main {
+.background {
     background-color: #add1ea;
     height: 600px;
 }
@@ -156,11 +163,11 @@ main {
 .box-1 {
     height: 600px;
     margin-top: 30px;
-    width: calc(33% - 15px);
+    width: calc((100%/3) - 30px);
 }
 
 .box-1-center {
-    margin-left: 30px;
+    margin: 30px 45px;
 }
 
 .type {
@@ -376,7 +383,7 @@ main {
 
 .box-5 .img-box .logo {
     width: 50%;
-    height: 170px;
+    height: 200px;
     position: relative;
 }
 
@@ -424,7 +431,7 @@ main {
 .designit-comment {
     background-color: #f5f5f5;
     width: 40%;
-    height: 340px;
+    height: 400px;
 }
 
 .designit-comment .comment-container {
@@ -526,7 +533,7 @@ main {
 
 footer {
     background-color: black;
-    margin-top: 4400px;
+    margin-top: 200px;
     color: white;
 }
 
