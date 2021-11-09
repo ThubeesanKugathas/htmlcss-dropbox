@@ -378,12 +378,13 @@ nav ul li a {
 }
 
 .box-5 .img-box {
-    width: 30%;
+    width: 30vw;
+    height: 26vw;
 }
 
 .box-5 .img-box .logo {
-    width: 50%;
-    height: 200px;
+    width: 15vw;
+    height: 13vw;
     position: relative;
 }
 
@@ -392,7 +393,7 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
+    width: 50%;
 }
 
 .box-5 .img-box-1 .logo-1 {
@@ -418,16 +419,16 @@ nav ul li a {
 
 .designit-comment {
     background-color: #f5f5f5;
-    width: 40%;
-    height: 400px;
+    width: calc(100% - 60vw);
+    height: 26vw;
 }
 
 .designit-comment .comment-container {
-    padding: 35px;
+    padding: 50px 35px;
 }
 
 .designit-comment .comment-container img {
-    width: 120px;
+    width: 30%;
 }
 
 .designit-comment .comment-container p{
