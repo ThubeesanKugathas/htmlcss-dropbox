@@ -6,13 +6,6 @@
 
 body {
     font-family: 'Open Sans';
-    position: relative;
-}
-
-.page {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .row::after{
@@ -89,9 +82,9 @@ nav ul li a {
 
 /* MAIN  JUMBOTRON---------------------------*/
 
-.background {
+.jumbotron-background {
     background-color: #add1ea;
-    height: 600px;
+    height: 650px;
 }
 
 .container-big {
@@ -162,7 +155,7 @@ nav ul li a {
 
 .box-1 {
     height: 600px;
-    margin-top: 30px;
+    margin-top: 50px;
     width: calc((100%/3) - 30px);
 }
 
@@ -396,25 +389,8 @@ nav ul li a {
     width: 50%;
 }
 
-.box-5 .img-box-1 .logo-1 {
-    background-color: #94d595;
-    border: 10px solid #d5eed6;
-}
-
 .filter {
     filter: invert(100%);
-}
-
-.box-5 .img-box-1 .logo-2 {
-    background-color: #6b002b;
-}
-
-.box-5 .img-box-1 .logo-3 {
-    background-color: #0096d3;
-}
-
-.box-5 .img-box-1 .logo-4 {
-    background-color: #ff0000;
 }
 
 .designit-comment {
@@ -434,6 +410,23 @@ nav ul li a {
 .designit-comment .comment-container p{
     margin-top: 50px;
     font-size: 13px;
+}
+
+.box-5 .img-box-1 .logo-1 {
+    background-color: #94d595;
+    border: 10px solid #d5eed6;
+}
+
+.box-5 .img-box-1 .logo-2 {
+    background-color: #6b002b;
+}
+
+.box-5 .img-box-1 .logo-3 {
+    background-color: #0096d3;
+}
+
+.box-5 .img-box-1 .logo-4 {
+    background-color: #ff0000;
 }
 
 .box-5 .img-box-2 .logo-1 {
@@ -482,7 +475,7 @@ nav ul li a {
 }
 
 .box-7 h2 {
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 
 .box-7 hr {
@@ -509,21 +502,25 @@ footer {
     color: white;
 }
 
-footer .row {
+footer .credits {
     padding: 50px 0;
 }
 
-footer .row .fl {
+footer .fl {
     width: 20%;
 }
 
-footer .row .credits{
-    padding-top: 20px;
-    font-size: 13px;
+footer .credits li {
+    padding-top: 10px;
 }
 
-footer .row .credits li {
-    padding-top: 10px;
+footer .credits li ul{
+    padding-top: 20px;
+}
+
+footer a {
+    color: white;
+    font-size: 13px;
 }
 
 .line {
@@ -551,6 +548,3 @@ footer p::before {
     font-size: small;
 }
 
-footer a {
-    color: white;
-}
